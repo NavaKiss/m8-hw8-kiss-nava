@@ -39,7 +39,23 @@ header {
 header a {
   font-size: 1.5rem;
   color: var(--off-white);
+  cursor: pointer;
 }
+
+header a:hover {
+  animation: hover;
+  animation-duration: .5s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes hover {
+  to {
+    transform: translateY(-8px);
+    transition: ease-out;
+    color:#a8dfff;
+  }
+}
+
 /* end header link animations */
 
 /* article link transitions */
@@ -56,16 +72,17 @@ main > article, nav{
 
 nav {
   display: flex;
-}
+  }
 
 nav > a:not(:first-of-type){
   margin-left: 24px;
+  text-decoration: none;
 }
 
 nav > a.logo {
   margin-right: auto;
   text-transform: uppercase;
-}
+  text-decoration: none;}
 
 main > section, main > article {
   margin-bottom: 96px;
