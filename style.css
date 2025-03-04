@@ -73,7 +73,7 @@ header a:hover {
   }
 }
 
-main a {
+article a {
   color: var(--danger-color);
   animation: nightlight 3s ease infinite;
   animation-delay: 0.5s;
