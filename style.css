@@ -75,6 +75,9 @@ header a:hover {
 
 main a {
   color: var(--danger-color);
+  animation: nightlight 3s ease infinite;
+  animation-delay: 0.5s;
+  text-decoration: none;
 }
 /* end article link transitions */
 
