@@ -59,6 +59,20 @@ header a:hover {
 /* end header link animations */
 
 /* article link transitions */
+
+@keyframes nightlight {
+  0%, 100% {
+    color:#7ab4ff;
+    filter:blur(0.5px);
+    text-shadow: 0 0 10px #d2e9f7, 0 0 20px #d2e9f7, 0 0 30px #d2e9f7, 0 0 40px #d2e9f7, 0 0 50px #d2e9f7, 0 0 60px #d2e9f7;
+  }
+  50% {
+    filter: blur(0);
+    color:#FFFFFF;
+    text-shadow: none;
+  }
+}
+
 main a {
   color: var(--danger-color);
 }
